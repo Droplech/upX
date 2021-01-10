@@ -11788,6 +11788,8 @@
       margin-top: 3vh;
       position: relative
     }
+
+
     .modalWindow{
       position: absolute;
       top: 70px; 
@@ -11798,6 +11800,13 @@
       width: 600px; 
       height: auto;
     }
+    .modal_systemRanks,
+    .modal_infoCashback{
+      height: 100%;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
     @media screen and (max-width:620px){
       .modalWindow{
         width: 100%;
