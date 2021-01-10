@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="siteContent__header">
+        <a href="#" class="header-logo nuxt-link-exact-active nuxt-link-active">
+            <img src="img/logo.svg" alt="UP-X">
+        </a>
+        <div class="header-auto-margin"></div>
+        <div class="header-buttons">
+
+            <button class="superButton">
+                <img src="img/social/profile.svg" alt="Регистрация">
+                <span>Регистрация</span>
+            </button>
+
+            <button class="superButton superButton_blue"><span>Войти</span>
+            </button>
+
+        </div>
+
+
+        <div class="header-dropdown">
+
+            <div class="header-dropdown__sandwich">
+                <img src="img/left_bar/sandwich.svg" alt="Sandwich">
+            </div>
+
+            <div class="header-dropdown__overlay"></div>
+
+            <div class="header-dropdown__inner">
+
+                <div class="header-menu">
+
+                    <div class="header-menu-left">
+
+                        <a href="#" class="header-menu-item header-menu-item_game">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/left_bar/crash.svg" alt="Краш">
+                            </span>
+                            <span class="header-menu-item__name">Краш</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item header-menu-item_game">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/left_bar/roulette.svg" alt="Рулетка">
+                            </span>
+                            <span class="header-menu-item__name">Рулетка</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item header-menu-item_game">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/left_bar/cases.svg" alt="Кейсы">
+                            </span>
+                            <span class="header-menu-item__name">Кейсы</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item header-menu-item_game">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/left_bar/lottery.svg" alt="Классик">
+                            </span>
+                            <span class="header-menu-item__name">Классик</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item header-menu-item_game">
+                            <span class="header-menu-item__new-label">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/left_bar/dice.svg" alt="DICE">
+                            </span>
+                            <span class="header-menu-item__name">DICE</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item header-menu-item_game">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/left_bar/keno.svg" alt="Keno"></span>
+                            <span class="header-menu-item__name">Keno</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item header-menu-item_game">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/left_bar/hilo.svg" alt="HiLo">
+                            </span>
+                            <span class="header-menu-item__name">HiLo</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item header-menu-item_game">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/left_bar/miner.svg" alt="Минёр">
+                            </span>
+                            <span class="header-menu-item__name">Минёр</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item header-menu-item_game">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/left_bar/stair.svg" alt="Лесенка">
+                            </span>
+                            <span class="header-menu-item__name">Лесенка</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item header-menu-item_game">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/left_bar/coinflip.svg" alt="Монетка"></span>
+                            <span class="header-menu-item__name">Монетка</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item header-menu-item_game">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/left_bar/skycard.svg" alt="Карточки"></span>
+                            <span class="header-menu-item__name">Карточки</span>
+                        </a>
+
+                    </div>
+
+
+
+
+                    <div class="header-menu-right">
+
+                        <a href="#" class="header-menu-item header-menu-item_active nuxt-link-active">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/games.svg" alt="Игры">
+                            </span>
+                            <span class="header-menu-item__name">Игры</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item">
+                            <span class="header-menu-item__new-label">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/contest.svg" alt="Турниры">
+                            </span>
+                            <span class="header-menu-item__name">Турниры</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/ranks.svg" alt="Ранги">
+                            </span>
+                            <span class="header-menu-item__name">Ранги</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/reviews.svg" alt="Отзывы">
+                            </span>
+                            <span class="header-menu-item__name">Отзывы</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/help.svg" alt="Помощь">
+                            </span>
+                            <span class="header-menu-item__name">Помощь</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/payouts.svg" alt="Выплаты"></span>
+                            <span class="header-menu-item__name">Выплаты</span>
+                        </a>
+
+                        <a href="#" class="header-menu-item header-menu-item_gold">
+                            <span class="header-menu-item__new-label" style="display:none;">New</span>
+                            <span class="header-menu-item__image">
+                                <img src="img/ingots.svg" alt="Бонусы">
+                            </span>
+                            <span class="header-menu-item__name">Бонусы</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="shortcuts-and-language">
+                    <div class="header-shortcuts">
+
+                        <div class="header-shortcuts__item ranks"></div>
+
+                        <div class="header-shortcuts__item cashback"></div>
+                        
+                        <a href="#" target="_blank" class="header-shortcuts__item vkontakte"></a>
+
+                        <a href="#" target="_blank" class="header-shortcuts__item telegram"></a>
+
+                        <a href="#" target="_blank" class="header-shortcuts__item twitter"></a>
+
+                        <a href="#" target="_blank" class="header-shortcuts__item instagram"></a>
+
+                    </div>
+
+                    <div class="header-settings" data-v-19bd3023="">
+                        <div class="header-settings__language" data-v-19bd3023="">
+
+                            <div class="header-settings__language-current" data-v-19bd3023="">
+
+                                <img src="img/social/ru.svg" alt="ru" class="header-settings__language-current-image"
+                                    data-v-19bd3023="">
+
+                                <span class="header-settings__language-current-name" data-v-19bd3023="">ru</span>
+
+                                <img src="img/social/drop-down-arrow.svg" alt="Dropdown"
+                                    class="header-settings__language-current-dropdown-icon" data-v-19bd3023="">
+
+                            </div>
+
+                            <div class="header-settings__language-dropdown" data-v-19bd3023="">
+
+                                <div class="header-settings__language-dropdown-content" data-v-19bd3023="">
+
+                                    <div class="header-settings__language-dropdown-item" data-v-19bd3023="">
+
+                                        <img src="img/social/ru.svg" alt="Русский" data-v-19bd3023="">
+                                        <span data-v-19bd3023="">Русский</span>
+
+                                    </div>
+
+                                    <div class="header-settings__language-dropdown-item" data-v-19bd3023="">
+
+                                        <img src="img/social/en.svg" alt="English" data-v-19bd3023="">
+                                        <span data-v-19bd3023="">English</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-settings__sound" data-v-19bd3023="">
+                            <img src="img/social/sound-on.svg" alt="On" data-v-19bd3023="">
+                            <img src="img/social/sound-off.svg" alt="Off" style="display:none;" data-v-19bd3023="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-profile">
+                    <div class="header-profile-buttons">
+
+                        <button class="superButton">
+                            <img src="img/social/profile.svg" alt="Регистрация">
+                            <span>Регистрация</span>
+                        </button>
+
+                        <button class="superButton superButton_blue">
+                            <span>Войти</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+
+
+
+        <div  data-v-713db41d="" aria-expanded="true" data-modal="modalRanks" class="v--modal-overlay scrollable modal_systemRanks">
+            <div class="v--modal-background-click">
+                <div class="v--modal-top-right"></div>
+
+
+                <div class="v--modal-box modalWindow">
+
+
+                    <div data-v-713db41d="" class="modalWindow-wrapper">
+                        <div data-v-713db41d="" class="modalWindow-inner modalWindowRanks">
+                            <div data-v-713db41d="" class="modalWindow__header">
+                                <div data-v-713db41d="" class="modalWindow__close-button"><img
+                                        data-v-713db41d="" src="img/system_ranks/close-circle-blue.svg"
+                                        alt="Close">
+                                </div>
+                                <div data-v-713db41d="" class="modalWindow__header__title">Система <span
+                                        class="blue">рангов</span></div>
+                            </div>
+                            <div data-v-713db41d=""
+                                class="modalWindow__content modalWindowRanks__content">
+                                <div data-v-713db41d="" class="p-4">
+                                    <div data-v-713db41d="" class="modalWindowRanks__content-image"><img
+                                            data-v-713db41d="" src="img/system_ranks/rank-example.png"
+                                            alt="Rank">
+                                    </div>
+                                    <div data-v-713db41d="" class="modalWindowRanks__content-text">
+                                        <p data-v-713db41d="">Каждый ранг является своеобразным уровнем,
+                                            для получения которого надо набрать необходимое количество
+                                            очков.</p>
+                                        <p data-v-713db41d="">Очки зарабатываются в играх и при
+                                            депозитах. За каждые 10 монет ставки/депозита начисляется 1
+                                            очко (например, Вы сделали ставку в краше на 100 монет, за
+                                            это Вы получите 10 очков). Зачисление очков происходит в
+                                            течение 10 минут после игры.</p>
+                                        <p data-v-713db41d="">При получении нового ранга очки
+                                            списываются в указанном размере.</p>
+                                        <p data-v-713db41d="">За каждый ранг предусмотрен единоразовый
+                                            денежный бонус, а в случае с топовыми рангами еще и
+                                            постоянный бонус в виде % от суммы депозита (суммируется со
+                                            всеми процентными бонусами).</p>
+                                        <p data-v-713db41d="">При достижении некоторых рангов Вам
+                                            становятся доступны особые кейсы.</p>
+                                        <p data-v-713db41d="">Информацию о текущем ранге и количестве
+                                            очков можно найти в личном кабинете.</p>
+                                    </div>
+                                    <div data-v-713db41d="" class="modalWindowRanks__content-buttons">
+                                        <button data-v-713db41d="" class="mainButton"><span
+                                                data-v-713db41d="">Список рангов</span></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+        </div>
+        <div aria-expanded="true" data-modal="modalCashback" class="v--modal-overlay scrollable modal_infoCashback">
+            <div class="v--modal-background-click">
+                <div class="v--modal-top-right"></div>
+
+                <div class="v--modal-box modalWindow">
+
+                    <div class="modalWindow-wrapper">
+                        <div class="modalWindow-inner modalWindowCashback">
+                            <div class="modalWindow__header">
+                                <div class="modalWindow__close-button"><img
+                                        src="img/system_ranks/close-circle-blue.svg" alt="Close"></div>
+                                <div class="modalWindow__header__title"><span>Информация о <span
+                                            class="blue">кэшбэке</span></span></div>
+                            </div>
+                            <div class="modalWindow__content modalWindowCashback__content">
+                                <div class="p-4">
+                                    <div class="modalWindowCashback__content-text">Каждый день в полночь
+                                        мы производим расчет кэшбэка для каждого пользователя по
+                                        доступному к выводу балансу. Чем больше доступная для вывода
+                                        сумма на момент расчета, тем выше процентная ставка и тем больше
+                                        сумма кэшбека.</div>
+                                    <div class="modalWindowCashback__content-text">Доступная для вывода
+                                        сумма — 0.00 (нажмите на свой баланс возле профиля, чтобы узнать
+                                        подробнее).</div>
+                                    <div class="modalWindowCashback__content-table">
+                                        Процентная ставка в зависимости от доступного к выводу баланса:
+                                        <ol>
+                                            <li class="">
+                                                До 99.99 слитков —
+
+                                                <span class="percent">
+                                                    0.1%
+                                                    <!----></span> <span class="current"
+                                                    style="display: none;">
+                                                    Вы сейчас тут
+                                                </span></li>
+                                            <li class="">
+                                                До 249.99 слитков —
+
+                                                <span class="percent">
+                                                    0.2%
+                                                    <!----></span> <span class="current"
+                                                    style="display: none;">
+                                                    Вы сейчас тут
+                                                </span></li>
+                                            <li class="">
+                                                До 499.99 слитков —
+
+                                                <span class="percent">
+                                                    0.3%
+                                                    <!----></span> <span class="current"
+                                                    style="display: none;">
+                                                    Вы сейчас тут
+                                                </span></li>
+                                            <li class="">
+                                                До 999.99 слитков —
+
+                                                <span class="percent">
+                                                    0.4%
+                                                    <!----></span> <span class="current"
+                                                    style="display: none;">
+                                                    Вы сейчас тут
+                                                </span></li>
+                                            <li class="">
+                                                До 1999.99 слитков —
+
+                                                <span class="percent">
+                                                    0.5%
+                                                    <!----></span> <span class="current"
+                                                    style="display: none;">
+                                                    Вы сейчас тут
+                                                </span></li>
+                                            <li class="">
+                                                До 4999.99 слитков —
+
+                                                <span class="percent">
+                                                    0.6%
+                                                    <!----></span> <span class="current"
+                                                    style="display: none;">
+                                                    Вы сейчас тут
+                                                </span></li>
+                                            <li class="">
+                                                До 9999.99 слитков —
+
+                                                <span class="percent">
+                                                    0.7%
+                                                    <!----></span> <span class="current"
+                                                    style="display: none;">
+                                                    Вы сейчас тут
+                                                </span></li>
+                                            <li class="">
+                                                До 19999.99 слитков —
+
+                                                <span class="percent">
+                                                    0.8%
+                                                    <!----></span> <span class="current"
+                                                    style="display: none;">
+                                                    Вы сейчас тут
+                                                </span></li>
+                                            <li class="">
+                                                До 49999.99 слитков —
+
+                                                <span class="percent">
+                                                    0.9%
+                                                    <!----></span> <span class="current"
+                                                    style="display: none;">
+                                                    Вы сейчас тут
+                                                </span></li>
+                                            <li class="">
+                                                От 50000 слитков —
+
+                                                <span class="percent">
+                                                    1%<span>, но не более 1000 слитков</span></span>
+                                                <span class="current" style="display: none;">
+                                                    Вы сейчас тут
+                                                </span></li>
+                                        </ol>
+                                    </div>
+                                    <div class="modalWindowCashback__content-rules">Для участия в
+                                        бонусной программе необходимо как минимум 100 игр за последние 7
+                                        дней. Максимальная сумма кэшбэка составляет 1000 слитков.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="sidebar siteContent__sidebar">
+            <div class="sidebar-item">
+
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-link__new-label" style="display:none;">New</span>
+                    <span class="sidebar-link__image">
+                        <img src="img/left_bar/crash.svg" alt="crash"></span>
+                    <span class="sidebar-link__name">Краш</span>
+                </a>
+            </div>
+
+            <div class="sidebar-item">
+
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-link__new-label" style="display:none;">New</span>
+                    <span class="sidebar-link__image">
+                        <img src="img/left_bar/roulette.svg" alt="roulette"></span>
+                    <span class="sidebar-link__name">Рулетка</span>
+                </a>
+            </div>
+
+
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-link__new-label" style="display:none;">New</span>
+                    <span class="sidebar-link__image">
+                        <img src="img/left_bar/cases.svg" alt="cases">
+                    </span>
+                    <span class="sidebar-link__name">Кейсы</span>
+                </a>
+            </div>
+
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-link__new-label" style="display:none;">New</span>
+                    <span class="sidebar-link__image">
+                        <img src="img/left_bar/lottery.svg" alt="lottery"></span>
+                    <span class="sidebar-link__name">Классик</span>
+                </a>
+            </div>
+
+
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-link__new-label">New</span>
+                    <span class="sidebar-link__image">
+                        <img src="img/left_bar/dice.svg" alt="dice">
+                    </span>
+                    <span class="sidebar-link__name">DICE</span>
+                </a>
+            </div>
+
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-link__new-label" style="display:none;">New</span>
+                    <span class="sidebar-link__image">
+                        <img src="img/left_bar/keno.svg" alt="keno">
+                    </span>
+                    <span class="sidebar-link__name">Keno</span>
+                </a>
+            </div>
+
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-link__new-label" style="display:none;">New</span>
+                    <span class="sidebar-link__image">
+                        <img src="img/left_bar/hilo.svg" alt="hilo">
+                    </span>
+                    <span class="sidebar-link__name">HiLo</span>
+                </a>
+            </div>
+
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-link__new-label" style="display:none;">New</span>
+                    <span class="sidebar-link__image">
+                        <img src="img/left_bar/miner.svg" alt="miner">
+                    </span>
+                    <span class="sidebar-link__name">Минёр</span>
+                </a>
+            </div>
+
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-link__new-label" style="display:none;">New</span>
+                    <span class="sidebar-link__image">
+                        <img src="img/left_bar/stair.svg" alt="stair">
+                    </span>
+                    <span class="sidebar-link__name">Лесенка</span>
+                </a>
+            </div>
+
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-link__new-label" style="display:none;">New</span>
+                    <span class="sidebar-link__image">
+                        <img src="img/left_bar/coinflip.svg" alt="coinflip">
+                    </span>
+                    <span class="sidebar-link__name">Монетка</span>
+                </a>
+            </div>
+
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <span class="sidebar-link__new-label" style="display:none;">New</span>
+                    <span class="sidebar-link__image">
+                        <img src="img/left_bar/skycard.svg" alt="skycard">
+                    </span>
+                    <span class="sidebar-link__name">Карточки</span>
+                </a>
+            </div>
+
+        </div>
+        <div class="siteContent-wrapper" style="min-height: 960px;">
+
+            <div class="promo__wrap">
+                <div class="promo promo-repost">
+                    <div class="row align-items-center">
+                        <div class="col d-flex align-items-center justify-content-center flex-column flex-md-row">
+                            <div class="promo-repost__text">
+                                Получи <strong>50 слитков</strong> на баланс прямо сейчас!
+                            </div>
+                            <a href="#" class="promo-repost__button mt-3 mt-md-0 ml-0 ml-md-3">
+                                <span>Подробнее</span>
+                            </a>
+                        </div>
+                        <div class="col-auto align-self-stretch">
+                            <div class="promo__close">
+                                <img src="img/main/promoclose.svg" alt="Close" width="20px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="siteContent__content container">
+
+                <div>
+                    <h1 class="index-h1">UP-X</h1>
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <div class="index-slider">
+                                <div class="index-slider-carousel">
+                                    <div class="index-slider-carousel__nav" style="display:none;">
+                                        <div
+                                            class="index-slider-carousel__nav-item index-slider-carousel__nav-item_left">
+                                            <div class="index-slider-carousel__nav-item-button"></div>
+                                        </div>
+                                        <div
+                                            class="index-slider-carousel__nav-item index-slider-carousel__nav-item_right">
+                                            <div class="index-slider-carousel__nav-item-button"></div>
+                                        </div>
+                                    </div>
+                                    <div class="index-slider-carousel__wrapper">
+                                        <div class="VueCarousel">
+                                            <div class="VueCarousel-wrapper">
+                                                <div class="VueCarousel-inner">
+                                                    <div tabindex="-1" aria-hidden="true" role="tabpanel"
+                                                        class="VueCarousel-slide index-slider-carousel__item VueCarousel-slide-adjustableHeight">
+                                                        <a href="#"
+                                                            class="index-slider-carousel__item-image index-slider-carousel__item-image_clickable index-slider-carousel__item-image_hovered"
+                                                            target="_self">
+                                                            <span
+                                                                class="index-slider-carousel__item-image-content index-slider-carousel__item-image-content_back">
+                                                            </span>
+                                                            <span
+                                                                class="index-slider-carousel__item-image-content index-slider-carousel__item-image-content_front">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="index-slider-pins" style="display:none;">
+                                    <div class="index-slider-pins__item index-slider-pins__item_active"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="index-static-banner">
+                                <a href="#" class="index-static-banner-content">
+                                    <span class="index-static-banner__image index-static-banner__image_back"></span>
+                                    <span class="index-static-banner__image index-static-banner__image_front"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-tournaments">
+                        <div class="index-tournaments-header">
+                            <h2>Турниры</h2>
+                        </div>
+                        <div class="tournaments-list">
+
+                            <div class="VueCarousel tournaments-list-wrapper">
+                                <div class="VueCarousel-wrapper">
+                                    <div class="VueCarousel-inner">
+                                        <div tabindex="-1" role="tabpanel"
+                                            class="VueCarousel-slide tournaments-list__item VueCarousel-slide-active">
+                                            <div class="tournaments-preview">
+                                                <div class="tournaments-preview-name">Еженедельный турнир</div>
+                                                <div class="tournaments-preview-card">
+                                                    <div class="tournaments-preview-card__poster"
+                                                        style="background-image: url(img/main/tournament.png);">
+                                                    </div>
+
+                                                    <div class="tournaments-preview-card__settings">
+                                                        <div class="tournaments-preview-card__settings-fund">
+
+                                                            <div class="tournaments-preview-card__settings-fund-cup">
+                                                                <img src="img/main/cup.svg" alt="Cup">
+                                                            </div>
+
+                                                            <div class="tournaments-preview-card__settings-fund-amount">
+                                                                <span>25 000</span>
+                                                                <img src="img/main/ingots.svg" alt="Ingots">
+                                                            </div>
+                                                        </div>
+
+                                                        <div
+                                                            class="tournaments-preview-card__settings-item tournaments-preview-card__settings-item_places has-tooltip">
+                                                            <span>50</span>
+                                                            <img src="img/main/star.svg" alt="Places">
+                                                        </div>
+
+                                                        <div
+                                                            class="tournaments-preview-card__settings-item tournaments-preview-card__settings-item_users has-tooltip">
+                                                            <span>321</span>
+                                                            <img src="img/main/users.svg" alt="Players">
+                                                        </div>
+                                                    </div>
+                                                    <div class="tournaments-preview-card-footer">
+                                                        <div
+                                                            class="tournaments-preview-card__timer tournaments-preview-card__timer_blue">
+                                                            <img src="img/main/blue-timer.svg" alt="Timer">
+                                                            <span>
+                                                                До завершения
+                                                                <span>00:04:14:39</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="tournaments-preview-card__button"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div tabindex="-1" role="tabpanel"
+                                            class="VueCarousel-slide tournaments-list__item VueCarousel-slide-active VueCarousel-slide-center">
+                                            <div class="tournaments-preview">
+                                                <div class="tournaments-preview-name">Счастливая карта</div>
+                                                <div class="tournaments-preview-card">
+                                                    <div class="tournaments-preview-card__poster"
+                                                        style="background-image: url(img/main/tournament2.png);">
+                                                    </div>
+                                                    <div class="tournaments-preview-card__settings">
+
+                                                        <div class="tournaments-preview-card__settings-fund">
+
+                                                            <div class="tournaments-preview-card__settings-fund-cup">
+
+                                                                <img src="img/main/cup.svg" alt="Cup">
+
+                                                            </div>
+
+                                                            <div class="tournaments-preview-card__settings-fund-amount">
+                                                                <span>5 000</span>
+                                                                <img src="img/main/ingots.svg" alt="Ingots">
+                                                            </div>
+                                                        </div>
+
+                                                        <div
+                                                            class="tournaments-preview-card__settings-item tournaments-preview-card__settings-item_places has-tooltip">
+                                                            <span>10</span>
+                                                            <img src="img/main/star.svg" alt="Places">
+                                                        </div>
+                                                        <div
+                                                            class="tournaments-preview-card__settings-item tournaments-preview-card__settings-item_users has-tooltip">
+                                                            <span>41</span>
+                                                            <img src="img/main/users.svg" alt="Players">
+                                                        </div>
+                                                    </div>
+                                                    <div class="tournaments-preview-card-footer">
+                                                        <div
+                                                            class="tournaments-preview-card__timer tournaments-preview-card__timer_blue">
+                                                            <img src="img/main/blue-timer.svg" alt="Timer">
+                                                            <span>
+                                                                До завершения
+                                                                <span>03:02:44:39</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="tournaments-preview-card__button"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <!---->
+                            </div>
+                            <div class="tournaments-slider-controls tournaments-slider-controls_preview">
+                                <div
+                                    class="tournaments-slider-controls__item tournaments-slider-controls__item_left tournaments-slider-controls__item_disabled">
+                                </div>
+                                <div
+                                    class="tournaments-slider-controls__item tournaments-slider-controls__item_right tournaments-slider-controls__item_disabled">
+                                </div>
+                            </div>
+                        </div>
+                    </div> <span>
+                        <div class="index-games">
+                            <div class="index-games-header">
+                                <h2>Играй в лучшее</h2>
+                            </div>
+                            <div class="index-games-list">
+                                <div class="row">
+
+                                    <div class="col-6 col-md-3">
+                                        <a href="#" class="default-game-card">
+                                            <span class="default-game-card__wrapper">
+                                                <span class="default-game-card__inner">
+                                                    <span class="default-game-card__image"
+                                                        style="background-image:url(img/play/crash.svg);"></span>
+                                                    <span class="default-game-card__name">Краш</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-6 col-md-3">
+                                        <a href="#" class="default-game-card">
+                                            <span class="default-game-card__wrapper">
+                                                <span class="default-game-card__inner">
+                                                    <span class="default-game-card__image"
+                                                        style="background-image:url('img/play/roulette.svg');"></span>
+                                                    <span class="default-game-card__name">Рулетка</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-6 col-md-3">
+                                        <a href="#" class="default-game-card">
+                                            <span class="default-game-card__wrapper">
+                                                <span class="default-game-card__inner">
+                                                    <span class="default-game-card__image"
+                                                        style="background-image:url('img/play/cases.svg');"></span>
+                                                    <span class="default-game-card__name">Кейсы</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-6 col-md-3">
+                                        <a href="#" class="default-game-card">
+                                            <span class="default-game-card__wrapper">
+                                                <span class="default-game-card__inner">
+                                                    <span class="default-game-card__image"
+                                                        style="background-image:url('img/play/lottery.svg');"></span>
+                                                    <span class="default-game-card__name">Классик</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-6 col-md-3">
+                                        <a href="#" class="default-game-card">
+                                            <span class="default-game-card__wrapper">
+                                                <span class="default-game-card__inner">
+                                                    <span class="default-game-card__image"
+                                                        style="background-image:url('img/play/dice.svg');"></span>
+                                                    <span class="default-game-card__name">DICE</span>
+                                                    <span class="default-game-card__new-label">Новинка</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-6 col-md-3">
+                                        <a href="#" class="default-game-card">
+                                            <span class="default-game-card__wrapper">
+                                                <span class="default-game-card__inner">
+                                                    <span class="default-game-card__image"
+                                                        style="background-image:url('img/play/miner.svg');"></span>
+                                                    <span class="default-game-card__name">Минёр</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-6 col-md-3">
+                                        <a href="#" class="default-game-card">
+                                            <span class="default-game-card__wrapper">
+                                                <span class="default-game-card__inner">
+                                                    <span class="default-game-card__image"
+                                                        style="background-image:url('img/play/stair.svg');"></span>
+                                                    <span class="default-game-card__name">Лесенка</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-6 col-md-3">
+                                        <a href="#" class="default-game-card">
+                                            <span class="default-game-card__wrapper">
+                                                <span class="default-game-card__inner">
+                                                    <span class="default-game-card__image"
+                                                        style="background-image:url('img/play/coinflip.svg');"></span>
+                                                    <span class="default-game-card__name">Монетка</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-6 col-md-3">
+                                        <a href="#" class="default-game-card">
+                                            <span class="default-game-card__wrapper">
+                                                <span class="default-game-card__inner">
+                                                    <span class="default-game-card__image"
+                                                        style="background-image:url('img/play/skycard.svg');"></span>
+                                                    <span class="default-game-card__name">Карточки</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-6 col-md-3">
+                                        <a href="#" class="default-game-card">
+                                            <span class="default-game-card__wrapper">
+                                                <span class="default-game-card__inner">
+                                                    <span class="default-game-card__image"
+                                                        style="background-image:url('img/play/keno.svg');"></span>
+                                                    <span class="default-game-card__name">Keno</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-6 col-md-3">
+                                        <a href="#" class="default-game-card">
+                                            <span class="default-game-card__wrapper">
+                                                <span class="default-game-card__inner">
+                                                    <span class="default-game-card__image"
+                                                        style="background-image:url('img/play/hilo.svg');"></span>
+                                                    <span class="default-game-card__name">HiLo</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="index-games-footer">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </span>
+                    <div class="index-wins">
+                        <div class="index-wins-header">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-sm">
+                                    <h2>У нас побеждают</h2>
+                                </div>
+                                <div class="col-12 col-sm-auto">
+                                    <div class="index-wins-table-tabs">
+                                        <div class="index-wins-table-tabs__item index-wins-table-tabs__item_active">
+                                            Крупные ставки</div>
+                                        <div class="index-wins-table-tabs__item">Крутые коэффициенты</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="index-wins-table">
+                            <div class="userTable">
+                                <div class="col-4 col-sm-3 text-left"><span>Игрок</span></div>
+                                <div class="col-2 col-md-3 col-lg-2 text-left d-none d-sm-block"><span>Игра</span></div>
+                                <div class="col-3 col-sm-2"><span>Ставка</span></div>
+                                <div class="col-2"><span>Коэфф.</span></div>
+                                <div class="col-3 col-md-2"><span>Выигрыш</span></div>
+                                <div class="col-1 text-right d-none d-lg-block"><span>Время</span></div>
+                            </div>
+
+                            <div class="userInfoTable__wrap">
+
+                                <div class="userTable">
+                                    <div class="col-4 col-sm-3 text-left">
+                                        <div class="index-wins-table__user">
+                                            <div class="user-info">
+                                                <div class="user-info__avatar">
+                                                    <div class="user-info__avatar-image">
+                                                        <img src="img/user/user1.jpg" alt="Александр Неч...">
+                                                    </div>
+
+                                                    <div class="user-info__avatar-rank has-tooltip">
+                                                        <img src="img/ranks/rank-1.png" alt="Любитель">
+                                                    </div>
+
+                                                </div>
+                                                <div class="user-info__name">Александр Неч...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 col-md-3 col-lg-2 text-left d-none d-sm-block">
+                                        <a href="/games/crash" class="index-wins-table__game">
+                                            <img src="img/left_bar/crash.svg" alt="Краш">
+                                            <span class="d-none d-md-block">Краш</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3 col-sm-2">
+                                        <div class="index-wins-table__bet">
+                                            <span class="sum">350</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2"><span class="index-wins-table__coeff">x1.65</span></div>
+
+                                    <div class="col-3 col-md-2">
+                                        <div class="index-wins-table__win">
+                                            <span class="sum">577.50</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-1 text-right d-none d-lg-block">
+                                        <span class="index-wins-table__time">18:45</span>
+                                    </div>
+                                </div>
+
+                                <div class="userTable">
+                                    <div class="col-4 col-sm-3 text-left">
+                                        <div class="index-wins-table__user">
+                                            <div class="user-info">
+                                                <div class="user-info__avatar">
+                                                    <div class="user-info__avatar-image">
+                                                        <img src="img/user/user1.jpg" alt="Александр Неч...">
+                                                    </div>
+
+                                                    <div class="user-info__avatar-rank has-tooltip">
+                                                        <img src="img/ranks/rank-2.png" alt="Любитель">
+                                                    </div>
+
+                                                </div>
+                                                <div class="user-info__name">Агдрей Н...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 col-md-3 col-lg-2 text-left d-none d-sm-block">
+                                        <a href="/games/crash" class="index-wins-table__game">
+                                            <img src="img/left_bar/coinflip.svg" alt="Краш">
+                                            <span class="d-none d-md-block">Монетка</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3 col-sm-2">
+                                        <div class="index-wins-table__bet">
+                                            <span class="sum">350</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2"><span class="index-wins-table__coeff">x1.65</span></div>
+
+                                    <div class="col-3 col-md-2">
+                                        <div class="index-wins-table__win">
+                                            <span class="sum">577.50</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-1 text-right d-none d-lg-block">
+                                        <span class="index-wins-table__time">18:45</span>
+                                    </div>
+                                </div>
+
+                                <div class="userTable">
+                                    <div class="col-4 col-sm-3 text-left">
+                                        <div class="index-wins-table__user">
+                                            <div class="user-info">
+                                                <div class="user-info__avatar">
+                                                    <div class="user-info__avatar-image">
+                                                        <img src="img/user/user1.jpg" alt="Александр Неч...">
+                                                    </div>
+
+                                                    <div class="user-info__avatar-rank has-tooltip">
+                                                        <img src="img/ranks/rank-3.png" alt="Любитель">
+                                                    </div>
+
+                                                </div>
+                                                <div class="user-info__name">Вадим Вер...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 col-md-3 col-lg-2 text-left d-none d-sm-block">
+                                        <a href="/games/crash" class="index-wins-table__game">
+                                            <img src="img/left_bar/roulette.svg" alt="Краш">
+                                            <span class="d-none d-md-block">Рулетка</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3 col-sm-2">
+                                        <div class="index-wins-table__bet">
+                                            <span class="sum">350</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2"><span class="index-wins-table__coeff">x1.65</span></div>
+
+                                    <div class="col-3 col-md-2">
+                                        <div class="index-wins-table__win">
+                                            <span class="sum">577.50</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-1 text-right d-none d-lg-block">
+                                        <span class="index-wins-table__time">18:45</span>
+                                    </div>
+                                </div>
+
+                                <div class="userTable">
+                                    <div class="col-4 col-sm-3 text-left">
+                                        <div class="index-wins-table__user">
+                                            <div class="user-info">
+                                                <div class="user-info__avatar">
+                                                    <div class="user-info__avatar-image">
+                                                        <img src="img/user/user1.jpg" alt="Александр Неч...">
+                                                    </div>
+
+                                                    <div class="user-info__avatar-rank has-tooltip">
+                                                        <img src="img/ranks/rank-4.png" alt="Любитель">
+                                                    </div>
+
+                                                </div>
+                                                <div class="user-info__name">Ренат Утк...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 col-md-3 col-lg-2 text-left d-none d-sm-block">
+                                        <a href="/games/crash" class="index-wins-table__game">
+                                            <img src="img/left_bar/cases.svg" alt="Краш">
+                                            <span class="d-none d-md-block">Кейсы</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3 col-sm-2">
+                                        <div class="index-wins-table__bet">
+                                            <span class="sum">350</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2"><span class="index-wins-table__coeff">x1.65</span></div>
+
+                                    <div class="col-3 col-md-2">
+                                        <div class="index-wins-table__win">
+                                            <span class="sum">577.50</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-1 text-right d-none d-lg-block">
+                                        <span class="index-wins-table__time">18:45</span>
+                                    </div>
+                                </div>
+
+                                <div class="userTable">
+                                    <div class="col-4 col-sm-3 text-left">
+                                        <div class="index-wins-table__user">
+                                            <div class="user-info">
+                                                <div class="user-info__avatar">
+                                                    <div class="user-info__avatar-image">
+                                                        <img src="img/user/user1.jpg" alt="Александр Неч...">
+                                                    </div>
+
+                                                    <div class="user-info__avatar-rank has-tooltip">
+                                                        <img src="img/ranks/rank-5.png" alt="Любитель">
+                                                    </div>
+
+                                                </div>
+                                                <div class="user-info__name">Никита Кал...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 col-md-3 col-lg-2 text-left d-none d-sm-block">
+                                        <a href="/games/crash" class="index-wins-table__game">
+                                            <img src="img/left_bar/crash.svg" alt="Краш">
+                                            <span class="d-none d-md-block">Краш</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3 col-sm-2">
+                                        <div class="index-wins-table__bet">
+                                            <span class="sum">350</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2"><span class="index-wins-table__coeff">x1.65</span></div>
+
+                                    <div class="col-3 col-md-2">
+                                        <div class="index-wins-table__win">
+                                            <span class="sum">577.50</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-1 text-right d-none d-lg-block">
+                                        <span class="index-wins-table__time">18:45</span>
+                                    </div>
+                                </div>
+
+                                <div class="userTable">
+                                    <div class="col-4 col-sm-3 text-left">
+                                        <div class="index-wins-table__user">
+                                            <div class="user-info">
+                                                <div class="user-info__avatar">
+                                                    <div class="user-info__avatar-image">
+                                                        <img src="img/user/user1.jpg" alt="Александр Неч...">
+                                                    </div>
+
+                                                    <div class="user-info__avatar-rank has-tooltip">
+                                                        <img src="img/ranks/rank-6.png" alt="Любитель">
+                                                    </div>
+
+                                                </div>
+                                                <div class="user-info__name">Сергей Кар...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 col-md-3 col-lg-2 text-left d-none d-sm-block">
+                                        <a href="/games/crash" class="index-wins-table__game">
+                                            <img src="img/left_bar/keno.svg" alt="Краш">
+                                            <span class="d-none d-md-block">Keno</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3 col-sm-2">
+                                        <div class="index-wins-table__bet">
+                                            <span class="sum">350</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2"><span class="index-wins-table__coeff">x1.65</span></div>
+
+                                    <div class="col-3 col-md-2">
+                                        <div class="index-wins-table__win">
+                                            <span class="sum">577.50</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-1 text-right d-none d-lg-block">
+                                        <span class="index-wins-table__time">18:45</span>
+                                    </div>
+                                </div>
+
+                                <div class="userTable">
+                                    <div class="col-4 col-sm-3 text-left">
+                                        <div class="index-wins-table__user">
+                                            <div class="user-info">
+                                                <div class="user-info__avatar">
+                                                    <div class="user-info__avatar-image">
+                                                        <img src="img/user/user1.jpg" alt="Александр Неч...">
+                                                    </div>
+
+                                                    <div class="user-info__avatar-rank has-tooltip">
+                                                        <img src="img/ranks/rank-7.png" alt="Любитель">
+                                                    </div>
+
+                                                </div>
+                                                <div class="user-info__name">Толик Про...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 col-md-3 col-lg-2 text-left d-none d-sm-block">
+                                        <a href="/games/crash" class="index-wins-table__game">
+                                            <img src="img/left_bar/hilo.svg" alt="Краш">
+                                            <span class="d-none d-md-block">Hilo</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3 col-sm-2">
+                                        <div class="index-wins-table__bet">
+                                            <span class="sum">350</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2"><span class="index-wins-table__coeff">x1.65</span></div>
+
+                                    <div class="col-3 col-md-2">
+                                        <div class="index-wins-table__win">
+                                            <span class="sum">577.50</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-1 text-right d-none d-lg-block">
+                                        <span class="index-wins-table__time">18:45</span>
+                                    </div>
+                                </div>
+
+                                <div class="userTable">
+                                    <div class="col-4 col-sm-3 text-left">
+                                        <div class="index-wins-table__user">
+                                            <div class="user-info">
+                                                <div class="user-info__avatar">
+                                                    <div class="user-info__avatar-image">
+                                                        <img src="img/user/user1.jpg" alt="Александр Неч...">
+                                                    </div>
+
+                                                    <div class="user-info__avatar-rank has-tooltip">
+                                                        <img src="img/ranks/rank-8.png" alt="Любитель">
+                                                    </div>
+
+                                                </div>
+                                                <div class="user-info__name">Андрей Тум...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 col-md-3 col-lg-2 text-left d-none d-sm-block">
+                                        <a href="/games/crash" class="index-wins-table__game">
+                                            <img src="img/left_bar/crash.svg" alt="Краш">
+                                            <span class="d-none d-md-block">Краш</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3 col-sm-2">
+                                        <div class="index-wins-table__bet">
+                                            <span class="sum">350</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2"><span class="index-wins-table__coeff">x1.65</span></div>
+
+                                    <div class="col-3 col-md-2">
+                                        <div class="index-wins-table__win">
+                                            <span class="sum">577.50</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-1 text-right d-none d-lg-block">
+                                        <span class="index-wins-table__time">18:45</span>
+                                    </div>
+                                </div>
+
+                                <div class="userTable">
+                                    <div class="col-4 col-sm-3 text-left">
+                                        <div class="index-wins-table__user">
+                                            <div class="user-info">
+                                                <div class="user-info__avatar">
+                                                    <div class="user-info__avatar-image">
+                                                        <img src="img/user/user1.jpg" alt="Александр Неч...">
+                                                    </div>
+
+                                                    <div class="user-info__avatar-rank has-tooltip">
+                                                        <img src="img/ranks/rank-9.png" alt="Любитель">
+                                                    </div>
+
+                                                </div>
+                                                <div class="user-info__name">Екатерина Сыч...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 col-md-3 col-lg-2 text-left d-none d-sm-block">
+                                        <a href="/games/crash" class="index-wins-table__game">
+                                            <img src="img/left_bar/keno.svg" alt="Краш">
+                                            <span class="d-none d-md-block">Keno</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3 col-sm-2">
+                                        <div class="index-wins-table__bet">
+                                            <span class="sum">350</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2"><span class="index-wins-table__coeff">x1.65</span></div>
+
+                                    <div class="col-3 col-md-2">
+                                        <div class="index-wins-table__win">
+                                            <span class="sum">577.50</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-1 text-right d-none d-lg-block">
+                                        <span class="index-wins-table__time">18:45</span>
+                                    </div>
+                                </div>
+
+                                <div class="userTable">
+                                    <div class="col-4 col-sm-3 text-left">
+                                        <div class="index-wins-table__user">
+                                            <div class="user-info">
+                                                <div class="user-info__avatar">
+                                                    <div class="user-info__avatar-image">
+                                                        <img src="img/user/user1.jpg" alt="Александр Неч...">
+                                                    </div>
+
+                                                    <div class="user-info__avatar-rank has-tooltip">
+                                                        <img src="img/ranks/rank-10.png" alt="Любитель">
+                                                    </div>
+
+                                                </div>
+                                                <div class="user-info__name">Марина Сол...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 col-md-3 col-lg-2 text-left d-none d-sm-block">
+                                        <a href="/games/crash" class="index-wins-table__game">
+                                            <img src="img/left_bar/crash.svg" alt="Краш">
+                                            <span class="d-none d-md-block">Краш</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3 col-sm-2">
+                                        <div class="index-wins-table__bet">
+                                            <span class="sum">350</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2"><span class="index-wins-table__coeff">x1.65</span></div>
+
+                                    <div class="col-3 col-md-2">
+                                        <div class="index-wins-table__win">
+                                            <span class="sum">577.50</span>
+                                            <img src="img/ranks/ingots-money.svg" alt="Ingots">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-1 text-right d-none d-lg-block">
+                                        <span class="index-wins-table__time">18:45</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="index-wins-footer">
+                            <p></p>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+
+
+            <div class="siteContent__footer">
+                <div class="container">
+
+                    <div class="global-stats-wrapper">
+                        <div class="global-stats">
+                            <div class="global-stats__item">
+                                <div class="global-stats__item-image">
+                                    <img src="img/global/online.svg" alt="Онлайн">
+                                </div>
+
+                                <div class="global-stats__item-value">
+                                    <span>Онлайн</span>
+                                    <strong>
+                                        <span class="">2760</span>
+                                    </strong>
+                                </div>
+                            </div>
+                            <div class="global-stats__item">
+                                <div class="global-stats__item-image">
+                                    <img src="img/global/users.svg" alt="Всего игроков">
+                                </div>
+                                <div class="global-stats__item-value">
+                                    <span>Всего игроков</span>
+                                    <strong>
+                                        <span class="">2 880 099</span>
+                                    </strong>
+                                </div>
+                            </div>
+                            <div class="global-stats__item">
+                                <div class="global-stats__item-image">
+                                    <img src="img/global/games.svg" alt="Всего игр">
+                                </div>
+                                <div class="global-stats__item-value">
+                                    <span>Всего игр</span>
+                                    <strong>
+                                        <span class="">349 875 171</span>
+                                    </strong>
+                                </div>
+                            </div>
+                            <div class="global-stats__item">
+                                <div class="global-stats__item-image">
+                                    <img src="img/global/profit.svg" alt="Выиграно сегодня">
+                                </div>
+                                <div class="global-stats__item-value">
+                                    <span>Выиграно сегодня</span>
+                                    <strong>
+                                        <span class="">131 992 608.01</span>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <!---->
+        </div>
+        <a href="/" class="footer-logo nuxt-link-exact-active nuxt-link-active">
+            <img src="img/footer/footer-logo.svg" alt="UP-X">
+        </a>
+        <div class="footer-pay-methods">
+            <div class="footer-pay-methods__title">Мы принимаем</div>
+            <div class="footer-pay-methods__icons">
+                <img src="img/footer/qiwi.svg" alt="QIWI">
+                <img src="img/footer/piastrix.svg" alt="Piastrix">
+                <img src="img/footer/yandex.svg" alt="Yandex.Money">
+                <img src="img/footer/steam.svg" alt="Steam">
+                <img src="img/footer/megafon.svg" alt="Megafon">
+                <img src="img/footer/tele2.svg" alt="Tele2">
+                <img src="img/footer/mts.svg" alt="MTS">
+                <img src="img/footer/beeline.svg" alt="Beeline">
+                <img src="img/footer/master.svg" alt="VISA, MasterCard">
+                <img src="img/footer/alfa-bank.svg" alt="Alfa Bank">
+                <img src="img/footer/bitcoin.svg" alt="Bitcoin">
+                <img src="img/footer/litecoin.svg" alt="Litecoin">
+                <img src="img/footer/ethereum.svg" alt="Ethereum">
+                <img src="img/footer/perfectmoney.svg" alt="PerfectMoney">
+            </div>
+        </div>
+
+        <div class="footer-policies">
+            <a href="/terms" class="">Пользовательское соглашение</a>
+            <a href="/policy" class="">Политика конфиденциальности</a>
+        </div>
+        <div class="footer-copyright">
+            <div class="footer-copyright__text">
+                <span>Айспик Лодж, ООО, г. Москва, ул. 3-я Рощинская, 5,115191, ИНН 7743603869</span>
+                <span>Прием обращений:<strong>upx.clients@gmail.com</strong></span>
+            </div>
+            <div class="footer-copyright__18plus"><img src="img/footer/plus-18.svg" alt="18+"></div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+    <script src="js/js.js"></script>
+
+
+
+</body>
+
+</html>
