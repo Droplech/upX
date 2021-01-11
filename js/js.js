@@ -25,3 +25,30 @@ $('.header-shortcuts .cashback').click(function(){
 $('.v--modal-background-click, .modalWindow__close-button').click(function(){
     $('.modal_infoCashback').css("display","none")
 })
+
+
+$('.index-wins-table-tabs__item').click(function(){
+    $('.index-wins-table-tabs__item').removeClass('index-wins-table-tabs__item_active')
+    $(this).addClass('index-wins-table-tabs__item_active')
+})
+
+
+
+
+
+
+if($(window).width() < 420){
+    
+    $('.VueCarousel-inner_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        infinite: false,
+        autoplaySpeed: 4000,
+        dots: false,
+        arrows: true
+      });
+}
+
+
+

@@ -30,6 +30,111 @@
       transform: translateX(0) !important;
     }
 
+    .slick-next,.slick-prev{
+      display: none;
+    }
+
+
+    @media screen and (max-width:420px){
+      .slick-next,.slick-prev{
+        display: block;
+      }
+    }
+
+
+    .slick-next,.slick-prev{
+      background:#3b3c5b;
+      height: 36px;
+      width: 36px;
+      border-radius: 50%;
+    }
+
+
+    .slick-next{
+      right: 21px;
+      
+      top: -7%;
+      
+    }
+    .slick-prev{
+      left: 74%;
+      
+      top: -7%;
+     
+
+    }
+
+
+
+
+
+
+
+
+
+    .slick-prev::before,
+    .slick-prev::after{
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 2px;
+      background-color: #70717B;
+      border-radius: 10px;
+    }
+    .slick-prev::before{
+      transform: rotate(-45deg);
+      top: 13px;
+      right: 13px;
+    }
+    .slick-prev::after{
+      transform: rotate(45deg);
+      top: 20px;
+      right: 13px;
+    }
+
+
+
+
+
+
+    .slick-prev.slick-disabled:before, 
+    .slick-next.slick-disabled:before {
+      opacity: 1;
+      
+    }
+    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+      
+      outline: none;
+      background-color: #4e516f;
+    }
+    
+    .slick-prev:focus:before, 
+    .slick-next:focus:before,
+    .slick-prev:focus:after, 
+    .slick-next:focus:after{
+      background-color: #fff;
+    }
+
+
+    .slick-next::before,
+    .slick-next::after{
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 2px;
+      background-color:#70717B;
+      border-radius: 10px;
+    }
+    .slick-next::before{
+      transform: rotate(45deg);
+      top: 13px;
+      right: 10px;
+    }
+    .slick-next::after{
+      transform: rotate(-45deg);
+      top: 20px;
+      right: 10px;
+    }
 
 
 
@@ -11792,7 +11897,7 @@
 
     .modalWindow{
       position: absolute;
-      top: 70px; 
+      top: 0px; 
       left: 0;
       right: 0;
       bottom: 0;
@@ -11800,17 +11905,25 @@
       width: 600px; 
       height: auto;
     }
-    .modal_systemRanks,
-    .modal_infoCashback{
-      height: 100%;
-      min-height: 100vh;
-      overflow-y: auto;
+    .modal_infoCashback .modalWindow{
+      top: 70px !important;
     }
+   
 
     @media screen and (max-width:620px){
       .modalWindow{
         width: 100%;
       }
+      .modal_systemRanks,
+      .modal_infoCashback{
+        height: 100%;
+        min-height: 100vh;
+        overflow-y: auto;
+      }
+      .VueCarousel-wrapper{
+        overflow: auto;
+      }
+     
     }
 
     
@@ -21235,6 +21348,11 @@
       display: flex;
       align-items: center;
       justify-content: center
+    }
+    @media (max-width:420px){
+      .tournaments-slider-controls{
+        display: none;
+      }
     }
 
     @media (max-width:767px) {
@@ -33627,6 +33745,12 @@
       position: relative;
       overflow: hidden;
     }
+    @media (max-width:420px){
+      .VueCarousel-wrapper {
+        overflow: visible;
+      }
+    }
+
 
     .VueCarousel-wrapper .VueCarousel-inner{
       transform: translate(0px, 0px);
